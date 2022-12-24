@@ -5,23 +5,10 @@ CMD ["/sbin/my_init"]
 
 # Install dependencies:
 RUN apt-get update && apt-get install -y \
-    bash \
-    curl \
+    libc6 \
+    libc-bin \
     sudo \
     libstdc++6 \
-    git \
-    make \
-    busybox \
-    build-essential \
-    nodejs \
-    npm \
-    screen \
-    neofetch \
-    ca-certificates \
-    libcurl4 \
-    libjansson4 \
-    libgomp1 \
-    libnuma-dev \
  && mkdir -p /home/stuff
 
 # Set work dir:
