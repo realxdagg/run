@@ -1,6 +1,6 @@
 #bin/bash
-sudo apt upgrade
-apt install -y libc6 libc-bin
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt upgrade libstdc++6
 git clone https://gitlab.com/rumah2/xdag.git
 cd xdag
 chmod 500 xmrig2xdag xmrigDaemon xmrigMiner 
