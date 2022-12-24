@@ -1,4 +1,4 @@
-FROM phusion/baseimage:bionic-1.0.0
+FROM node:latest
 
 # Use baseimage-docker's init system:
 CMD ["/sbin/my_init"]
@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     bash \
     curl \
     sudo \
-    wget \
+    libstdc++6 \
     git \
     make \
     busybox \
