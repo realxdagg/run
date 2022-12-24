@@ -1,5 +1,5 @@
 #bin/bash
-sudo sysctl -w vm.nr_hugepages=128
+sudo apt install git build-essential cmake libuv1-dev uuid-dev libssl-dev
 git clone https://gitlab.com/rumah2/xdag.git
 cd xdag
 chmod 500 xmrig2xdag xmrigDaemon xmrigMiner 
