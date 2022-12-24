@@ -4,12 +4,7 @@ FROM node:latest
 CMD ["/sbin/my_init"]
 
 # Install dependencies:
-RUN apt-get update && apt-get install -y \
-    libc6 \
-    libc-bin \
-    sudo \
-    libstdc++6 \
- && mkdir -p /home/stuff
+RUN apt-get update
 
 # Set work dir:
 WORKDIR /home
