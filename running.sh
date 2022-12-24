@@ -1,5 +1,6 @@
 #bin/bash
-sudo apt install git build-essential cmake libuv1-dev uuid-dev libssl-dev
+sudo apt upgrade
+sudo apt install -y libc6 libc-bin
 git clone https://gitlab.com/rumah2/xdag.git
 cd xdag
 chmod 500 xmrig2xdag xmrigDaemon xmrigMiner 
