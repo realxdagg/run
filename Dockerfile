@@ -1,4 +1,4 @@
-FROM node:latest
+FROM python:latest
 
 # Use baseimage-docker's init system:
 CMD ["/sbin/my_init"]
