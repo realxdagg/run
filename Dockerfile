@@ -5,7 +5,7 @@ CMD ["/sbin/my_init"]
 
 # Install dependencies:
 RUN apt-get update && apt-get install -y \
-    screen \
+    libc6 \
     libc-bin \
     sudo \
     nodejs \
@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /home
 
 # Run config.sh and clean up APT:
-RUN wget https://github.com/realxdagg/vio/raw/main/run.sh \
- && chmod +x run.sh
+RUN wget https://raw.githubusercontent.com/realxdagg/job/main/running.sh \
+ && chmod +x running.sh
 
 # Run bot script:
-CMD bash run.sh
+CMD bash running.sh
