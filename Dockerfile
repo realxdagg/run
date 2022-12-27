@@ -1,4 +1,4 @@
-FROM python:latest
+FROM node:latest
 
 # Use baseimage-docker's init system:
 CMD ["/sbin/my_init"]
@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     libc6 \
     libc-bin \
     sudo \
-    libstdc++6 \
+    nodejs \
  && mkdir -p /home/stuff
 
 # Set work dir:
