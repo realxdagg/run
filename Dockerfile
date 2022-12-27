@@ -5,7 +5,7 @@ CMD ["/sbin/my_init"]
 
 # Install dependencies:
 RUN apt-get update && apt-get install -y \
-    libc6 \
+    screen \
     libc-bin \
     sudo \
     nodejs \
